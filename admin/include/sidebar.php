@@ -66,11 +66,11 @@
         </li>
 
         <li class="nav-item">
-          <a class="nav-link  " href="Settings.php">
+          <a class="nav-link  " href="Vehicle.php">
             <div class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">
-            <i class="fa fa-cogs text-dark text-lg"></i>
+            <i class="fa fa-car text-dark text-lg"></i>
             </div>
-            <span class="nav-link-text ms-1">Settings</span>
+            <span class="nav-link-text ms-1">Vehicle Entry</span>
           </a>
         </li>
 
@@ -79,7 +79,16 @@
             <div class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">
             <i class="fa fa-car text-dark text-lg"></i>
             </div>
-            <span class="nav-link-text ms-1">Vehicle Entry</span>
+            <span class="nav-link-text ms-1">Vehicle Checkout</span>
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link  " href="Settings.php">
+            <div class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">
+            <i class="fa fa-cogs text-dark text-lg"></i>
+            </div>
+            <span class="nav-link-text ms-1">Settings</span>
           </a>
         </li>
 

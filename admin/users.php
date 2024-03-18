@@ -11,6 +11,8 @@
         </div>
         <div class="card-body">
 
+        <?=alertMessage(); ?>
+
         <table class="table table-bordered table-stripped">
             <thead>
                 <tr>
