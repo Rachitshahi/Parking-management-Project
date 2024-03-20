@@ -21,22 +21,78 @@
                     <th>FullName</th>
                     <th>Email</th>
                     <th>Phone</th>
+                    <th>Role</th>
                     <th>Action</th>
                 </tr>
             </thead>
             <tbody>
+                <?php
+                   $users = getAll('users');
+                   if(mysqli_num_rows($users) > 0)
+                   {
+                    foreach($users as $userItem)
+                    {
+                        ?>
                 <tr>
-                    <td>1</td>
-                    <td>username</td>
-                    <td>name</td>
-                    <td>email</td>
-                    <td>phone</td>
+                    <td><?= $userItem['ID']; ?></td>
+                    <td><?= $userItem['username']; ?></td>
+                    <td><?= $userItem['name']; ?></td>
+                    <td><?= $userItem['phone']; ?></td>
+                    <td><?= $userItem['email']; ?></td>
+                    <td><?= $userItem['role']; ?></td>
+                    <td>
+                        <a href="users-edit.php?id=<?= $userItem['ID']; ?>" class="btn btn-success btn-sm">Edit</a>
+                        <a href="users-delete.php" class="btn btn-danger btn-sm mx-2">Delete</a>
+                    </td>
+
+                </tr>
+                        <?php
+                    }
+                   }
+                   else
+                   {
+                    ?>
+                    <tr>
+                        <td colspan="7">No Record Found</td>
+                    </tr>
+                    <?php
+                   } 
+                ?>
+
+                <!-- additional login info start -->
+                <?php
+                   $users = getAll('login');
+                   if(mysqli_num_rows($users) > 0)
+                   {
+                    foreach($users as $userItem)
+                    {
+                        ?>
+                <tr>
+                    <td><?= $userItem['id']; ?></td>
+                    <td><?= $userItem['username']; ?></td>
+                    <td><?= $userItem['fullName']; ?></td>
+                    <td><?= $userItem['email']; ?></td>
+                    <td><?= $userItem['phone']; ?></td>
+                    <td><?= $userItem['userType']; ?></td>
                     <td>
                         <a href="users-edit.php" class="btn btn-success btn-sm">Edit</a>
                         <a href="users-delete.php" class="btn btn-danger btn-sm mx-2">Delete</a>
                     </td>
 
                 </tr>
+                        <?php
+                    }
+                   }
+                   else
+                   {
+                    ?>
+                    <tr>
+                        <td colspan="7">No Record Found</td>
+                    </tr>
+                    <?php
+                   } 
+                ?> 
+                 <!-- additional login info close-->
             </tbody>
         </table>
 

@@ -10,48 +10,58 @@
             </h4>
         </div>
         <div class="card-body">
-            <form action="">
+            <form action="code.php" method="POST">
+                <?php
+                $paramResult = checkparamid('id');
+                if(!is_numeric($paramResult)){
+                    echo '<h5>'.$paramResult.'</h5>';
+                    return false;
+                }
 
-            <div class="row">
+                $user =getById('users',checkparamid('id'));
+                if($user['status'] == 200)
+                {
+                    ?>
+                    <div class="row">
                 <div class="col-md-6">
                 <div class="mb-3">
                     <label> Full Name </label>
-                    <input type="text" name="name" class="form-control">
+                    <input type="text" name="name" value="<?= $user['data']['name']; ?>" required class="form-control">
                 </div>
                 </div>
 
                 <div class="col-md-6">
                 <div class="mb-3">
                     <label> Username </label>
-                    <input type="text" name="username" class="form-control">
+                    <input type="text" name="username" value="<?= $user['data']['username']; ?>" required class="form-control">
                 </div>
                 </div>
 
                 <div class="col-md-6">
                 <div class="mb-3">
                     <label> Email </label>
-                    <input type="email" name="email" class="form-control">
+                    <input type="email" name="email" required class="form-control">
                 </div>
                 </div>
 
                 <div class="col-md-6">
                 <div class="mb-3">
                     <label> Contact Information </label>
-                    <input type="tel" name="phone" class="form-control">
+                    <input type="tel" name="phone" required class="form-control">
                 </div>
                 </div>
 
                 <div class="col-md-6">
                 <div class="mb-3">
                     <label> Password </label>
-                    <input type="password" name="password" class="form-control">
+                    <input type="password" name="password" required class="form-control">
                 </div>
                 </div>
 
                 <div class="col-md-3">
                 <div class="mb-3">
                     <label> Select role </label>
-                    <select name="role" class="form-select">
+                    <select name="role" required class="form-select">
                         <option value="">Select role</option>
                         <option value="admin">Admin</option>
                         <option value="user">User</option>
@@ -68,7 +78,14 @@
             </div>
 
             </div>
-        
+                    <?php
+                }
+                else
+                {
+                    echo '<h5>'.$user['message'].'</h5>';
+                }
+                ?>
+
             </form>
         </div>
     </div>
