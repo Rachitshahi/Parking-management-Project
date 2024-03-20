@@ -3,7 +3,7 @@ if (isset($_POST['login'])) {
     $dbhost = "localhost";
     $dbuser = "root";
     $dbpass = "";
-    $dbname = "project1";
+    $dbname = "parkingdb";
     //database connection
     $conn = mysqli_connect($dbhost, $dbuser, $dbpass,$dbname);
     if($conn){
@@ -14,11 +14,11 @@ if (isset($_POST['login'])) {
     }
 
 if (isset($_POST['signup'])) {
-   echo "this is connection.php";
+   echo "success";
     $dbhost = "localhost";
     $dbuser = "root";
     $dbpass = "";
-    $dbname = "project1";
+    $dbname = "parkingdb";
     $conn = mysqli_connect($dbhost, $dbuser, $dbpass,$dbname); 
     if($conn){
         //echo"Database connected successfully";
