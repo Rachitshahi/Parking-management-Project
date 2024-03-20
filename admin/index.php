@@ -1,6 +1,6 @@
 <?php include('include/header.php'); ?>
 
-<h4>Hello Bikesh</h4>
+<h4>EasyPark</h4>
 
 <div class="row">
 <div class="col-md-4 mb-4">

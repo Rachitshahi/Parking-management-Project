@@ -30,7 +30,7 @@
           </a>
         </li>
 
-        <li class="nav-item mt-3">
+       <!-- <li class="nav-item mt-3">
           <h6 class="ps-4 ms-2 text-uppercase text-xs font-weight-bolder opacity-6">Manage Services</h6>
         </li>
 
@@ -41,10 +41,10 @@
             </div>
             <span class="nav-link-text ms-1">Services</span>
           </a>
-        </li>
+        </li> -->
 
         <li class="nav-item mt-3">
-          <h6 class="ps-4 ms-2 text-uppercase text-xs font-weight-bolder opacity-6">Site management</h6>
+          <h6 class="ps-4 ms-2 text-uppercase text-xs font-weight-bolder opacity-6">User management</h6>
         </li>
 
         <li class="nav-item">
@@ -56,13 +56,17 @@
           </a>
         </li>
 
-        <li class="nav-item">
+       <!-- <li class="nav-item">
           <a class="nav-link  " href="category.php">
             <div class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">
             <i class="fa fa-globe text-dark text-lg"></i>
             </div>
             <span class="nav-link-text ms-1">Manage Category</span>
           </a>
+        </li> -->
+
+        <li class="nav-item mt-3">
+          <h6 class="ps-4 ms-2 text-uppercase text-xs font-weight-bolder opacity-6">Vehicle status</h6>
         </li>
 
         <li class="nav-item">
@@ -83,14 +87,14 @@
           </a>
         </li>
 
-        <li class="nav-item">
+       <!-- <li class="nav-item">
           <a class="nav-link  " href="Settings.php">
             <div class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">
             <i class="fa fa-cogs text-dark text-lg"></i>
             </div>
             <span class="nav-link-text ms-1">Settings</span>
           </a>
-        </li>
+        </li> -->
 
     </div>
     <div class="sidenav-footer mx-3 ">
