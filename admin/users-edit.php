@@ -22,7 +22,10 @@
                 if($user['status'] == 200)
                 {
                     ?>
-                    <div class="row">
+
+               <input type="hidden" name="userId" value="<?= $user['data']['id']; ?>" required>
+
+                <div class="row">
                 <div class="col-md-6">
                 <div class="mb-3">
                     <label> Full Name </label>
@@ -40,21 +43,21 @@
                 <div class="col-md-6">
                 <div class="mb-3">
                     <label> Email </label>
-                    <input type="email" name="email" required class="form-control">
+                    <input type="email" name="email" value="<?= $user['data']['email']; ?>" required class="form-control">
                 </div>
                 </div>
 
                 <div class="col-md-6">
                 <div class="mb-3">
                     <label> Contact Information </label>
-                    <input type="tel" name="phone" required class="form-control">
+                    <input type="tel" name="phone" value="<?= $user['data']['phone']; ?>" required class="form-control">
                 </div>
                 </div>
 
                 <div class="col-md-6">
                 <div class="mb-3">
                     <label> Password </label>
-                    <input type="password" name="password" required class="form-control">
+                    <input type="password" name="password" value="<?= $user['data']['password']; ?>" required class="form-control">
                 </div>
                 </div>
 
@@ -63,8 +66,8 @@
                     <label> Select role </label>
                     <select name="role" required class="form-select">
                         <option value="">Select role</option>
-                        <option value="admin">Admin</option>
-                        <option value="user">User</option>
+                        <option value="admin" value="<?= $user['data']['role'] == 'admin' ? 'selected':''; ?>">Admin</option>
+                        <option value="user" <?= $user['data']['role'] == 'user' ? 'selected':''; ?>>User</option>
                     </select>
                     </div>
                 </div>

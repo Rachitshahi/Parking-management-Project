@@ -7,7 +7,8 @@ require 'dbcon.php';
 function validate($inputData){
  global $conn;
 
- return mysqli_real_escape_string($conn, $inputData);
+ $validateData = mysqli_real_escape_string($conn, $inputData);
+ return trim($validateData);
 }
 
 function redirect($url,$status){
