@@ -42,7 +42,10 @@
                     <td><?= $userItem['role']; ?></td>
                     <td>
                         <a href="users-edit.php?id=<?= $userItem['id']; ?>" class="btn btn-success btn-sm">Edit</a>
-                        <a href="users-delete.php" class="btn btn-danger btn-sm mx-2">Delete</a>
+                        <a href="users-delete.php?id=<?= $userItem['id']; ?>" 
+                           class="btn btn-danger btn-sm mx-2"
+                           onclick="return confirm('Are you sure you want to delete this data?')"
+                           > Delete</a>
                     </td>
 
                 </tr>
