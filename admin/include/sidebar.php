@@ -69,6 +69,51 @@
           <h6 class="ps-4 ms-2 text-uppercase text-xs font-weight-bolder opacity-6">Vehicle status</h6>
         </li>
 
+        <!-- this is imported from legos parker for manage category-->
+
+        <style>
+        .nav-item {
+          list-style-type: none; /* This removes the bullet points */
+        }
+
+        .pcoded-submenu {
+          display: none; /* This hides the submenu */
+        }
+
+        .nav-item:hover .pcoded-submenu {
+          display: block; /* This shows the submenu on hover */
+        }
+        </style>
+
+</head>
+        <li class="nav-item pcoded-hasmenu">
+          <a class="nav-link" href="javascript:void(0)">
+            <div class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">
+              <i class="fa fa-bars text-dark text-lg"></i>
+            </div>
+            <span class="nav-link-text ms-1">Manage Category</span>
+          </a>
+          <ul class="pcoded-submenu">
+            <li class="nav-item">
+              <a class="nav-link" href="addcategory.php">
+                <div class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">
+                  <i class="fa fa-plus text-dark text-lg"></i>
+                </div>
+                <span class="nav-link-text ms-1">Add Category</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="manage-category.php">
+                <div class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">
+                  <i class="fa fa-eye text-dark text-lg"></i>
+                </div>
+                <span class="nav-link-text ms-1">View Categories</span>
+              </a>
+            </li>
+
+          </ul>
+        </li>
+
         <li class="nav-item">
           <a class="nav-link  " href="Vehicle.php">
             <div class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">
