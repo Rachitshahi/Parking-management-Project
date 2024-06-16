@@ -1,4 +1,8 @@
 
+<?php
+require '../config/function.php';
+?>
+
 <head>
     <style>
         @import url('https://fonts.googleapis.com/css?family=Montserrat|Quicksand');

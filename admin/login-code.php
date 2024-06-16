@@ -38,21 +38,21 @@ if(isset($_POST['login']))
                         'email' => $row['email']
                     ];
                     // this is to redirect to user index page
-                    redirect(' ','Logged In Successfully');
+                    redirect('users.php','Logged In Successfully');
                 }
             }
             else
             {
-                redirect('loginform.html','Invalid Email ID or Password');
+                redirect('loginform.php','Invalid Email ID or Password');
             }
         }
         else
         {
-            redirect('loginform.html','Something went wrong');
+            redirect('loginform.php','Something went wrong');
         }
     }else
     {
-        redirect('loginform.html','All fields are mandetory');
+        redirect('loginform.php','All fields are mandetory');
     }
 
 
