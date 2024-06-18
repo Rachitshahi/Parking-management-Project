@@ -227,13 +227,12 @@ if(isset($_SESSION['auth']))
         </div>
 
         <div id="signup-form">
-            <form method="POST" action="signup.php" onsubmit="submitHandler()" autocomplete="on">
-                <input type="text" placeholder="Enter your full name" name="fullName" required />
-                <input type="number" id="phone" placeholder="Enter your phone number" name="phone" required />
+            <form method="POST" action="signup-code.php" onsubmit="submitHandler()" autocomplete="on">
+            <input type="text" placeholder="Choose username" name="username" required />
+                <input type="text" placeholder="Enter your full name" name="name" required />
                 <input type="email" placeholder="Enter your email" name="email" required />
-                <input type="text" placeholder="Choose email" name="email" required />
+                <input type="number" id="phone" placeholder="Enter your phone number" name="phone" required />
                 <input type="password" id="pass" placeholder="Create password" name="password" required />
-                <input type="password" id="rpass" placeholder="Re-enter your password" name="password" required />
                 <input type="submit" class="btn signup" name="signup" value="create account" onclick="submitHandler()">
                 <!-- <p>Clicking <strong>create account</strong> means that you are agree to our <a href="javascript:void(0)">terms of services</a>.</p> -->
                 <hr />
