@@ -1,5 +1,7 @@
 <?php include('include/header.php'); ?>
 
+<?= alertMessage(); ?>
+
 <h4>EasyPark</h4>
 
 <div class="row">

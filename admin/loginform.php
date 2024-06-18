@@ -1,6 +1,11 @@
 
 <?php
 require '../config/function.php';
+
+if(isset($_SESSION['auth']))
+{
+    redirect('index.php','You are already logged in');
+}
 ?>
 
 <head>
