@@ -33,7 +33,7 @@ echo "<script>window.location.href ='manage-category.php'</script>";
                                 <input type="text" class="form-control" name="catename" placeholder="Vehicle Category" required>
                             </div>
                         </div>
-                        <div class="text-end">
+                        <div class="text-center">
                             <button type="submit" name="submit" class="btn btn-primary">Submit</button>
                         </div>
                     </form>
