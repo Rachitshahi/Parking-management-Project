@@ -10,7 +10,7 @@
       
     <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link  active" href="report.php">
+          <a class="nav-link  active" href="index.php">
             <div class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">
               <i class="fa fa-home text-white text-lg"></i>
             </div>
