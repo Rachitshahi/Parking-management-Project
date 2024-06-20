@@ -30,19 +30,6 @@
           </a>
         </li>
 
-       <!-- <li class="nav-item mt-3">
-          <h6 class="ps-4 ms-2 text-uppercase text-xs font-weight-bolder opacity-6">Manage Services</h6>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link  " href="services.php">
-            <div class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">
-            <i class="fa fa-tools text-dark text-lg"></i>
-            </div>
-            <span class="nav-link-text ms-1">Services</span>
-          </a>
-        </li> -->
-
         <li class="nav-item mt-3">
           <h6 class="ps-4 ms-2 text-uppercase text-xs font-weight-bolder opacity-6">User management</h6>
         </li>
@@ -55,15 +42,6 @@
             <span class="nav-link-text ms-1">Admin/Users</span>
           </a>
         </li>
-
-       <!-- <li class="nav-item">
-          <a class="nav-link  " href="category.php">
-            <div class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">
-            <i class="fa fa-globe text-dark text-lg"></i>
-            </div>
-            <span class="nav-link-text ms-1">Manage Category</span>
-          </a>
-        </li> -->
 
         <li class="nav-item mt-3">
           <h6 class="ps-4 ms-2 text-uppercase text-xs font-weight-bolder opacity-6">Vehicle status</h6>
@@ -115,11 +93,20 @@
         </li>
 
         <li class="nav-item">
-          <a class="nav-link  " href="Vehicle.php">
+          <a class="nav-link  " href="add-vehicle.php">
+            <div class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">
+            <i class="fa fa-plus text-dark text-lg"></i>
+            </div>
+            <span class="nav-link-text ms-1">Add Vehicle</span>
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link  " href="manage-incomingvehicle.php">
             <div class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">
             <i class="fa fa-car text-dark text-lg"></i>
             </div>
-            <span class="nav-link-text ms-1">Vehicle Entry</span>
+            <span class="nav-link-text ms-1">Manage Incoming vehicle</span>
           </a>
         </li>
 
