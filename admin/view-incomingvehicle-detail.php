@@ -27,16 +27,15 @@ if(isset($_POST['submit']))
 
 ?>
 
-<div class="content">
-            <div class="animated fadeIn">
+<div class="container">
                 <div class="row">
                    
          
 
-                <div class="col-lg-12">
+                <div class="col-md-12">
                     <div class="card">
                         <div class="card-header">
-                            <strong class="card-title">View Incoming Vehicle</strong>
+<h4> View Incoming Vehicle </h4>
                         </div>
                         <div class="card-body">
                   
@@ -152,7 +151,7 @@ if($row['Status']=="Out")
 
 
         </div>
-    </div><!-- .animated -->
+    </div>
 </div>
 
 
