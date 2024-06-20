@@ -101,32 +101,33 @@
           </a>
         </li>
 
+        <li class="nav-item pcoded-hasmenu">
+          <a class="nav-link" href="javascript:void(0)">
+            <div class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">
+            <i class="fa fa-list-ul text-dark text-lg"></i>
+            </div>
+            <span class="nav-link-text ms-1">Manage Vehicle In/Out</span>
+          </a>
+          <ul class="pcoded-submenu">
         <li class="nav-item">
           <a class="nav-link  " href="manage-incomingvehicle.php">
             <div class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">
             <i class="fa fa-car text-dark text-lg"></i>
             </div>
-            <span class="nav-link-text ms-1">Manage Incoming vehicle</span>
+            <span class="nav-link-text ms-1">Incoming vehicle</span>
           </a>
         </li>
 
         <li class="nav-item">
-          <a class="nav-link  " href="Vehicle.php">
+          <a class="nav-link  " href="manage-outgoingvehicle.php">
             <div class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">
             <i class="fa fa-car text-dark text-lg"></i>
             </div>
-            <span class="nav-link-text ms-1">Vehicle Checkout</span>
+            <span class="nav-link-text ms-1">Outgoing vehicle</span>
           </a>
         </li>
-
-       <!-- <li class="nav-item">
-          <a class="nav-link  " href="Settings.php">
-            <div class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">
-            <i class="fa fa-cogs text-dark text-lg"></i>
-            </div>
-            <span class="nav-link-text ms-1">Settings</span>
-          </a>
-        </li> -->
+        </ul>
+        </li>
 
     </div>
     <div class="sidenav-footer mx-3 ">

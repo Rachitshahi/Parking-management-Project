@@ -56,7 +56,7 @@ if($row['Status']=="Out")
 <tr>
 <th>Out time</th>
 <td><?php  echo $row['OutTime'];?></td>
-<th>Rarking Charge</th>
+<th>Parking Charge</th>
 <td><?php  echo $row['ParkingCharge'];?></td>
 </tr>
 <tr>
