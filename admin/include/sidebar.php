@@ -22,7 +22,7 @@
         </li>
 
         <li class="nav-item">
-          <a class="nav-link  " href="report.php">
+          <a class="nav-link  " href="bwdates-report-ds.php">
             <div class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">
             <i class="fa fa-bullhorn text-dark text-lg"></i>
             </div>
@@ -127,6 +127,15 @@
           </a>
         </li>
         </ul>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link  " href="search-vehicle.php">
+            <div class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">
+            <i class="fa fa-search text-dark text-lg"></i>
+            </div>
+            <span class="nav-link-text ms-1">Search Vehicle</span>
+          </a>
         </li>
 
     </div>
