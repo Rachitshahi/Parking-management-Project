@@ -9,7 +9,7 @@
           <div class="card card-body p-3">
                     <p class="text-sm mb-0 text-capitalize font-weight-bold">Vehicle Parked</p>
                     <h5 class="font-weight-bolder mb-0">
-                      2
+                      4
                     </h5>
             </div>
           </div>
@@ -18,7 +18,7 @@
           <div class="card card-body p-3">
                     <p class="text-sm mb-0 text-capitalize font-weight-bold">Vehicle Checkout</p>
                     <h5 class="font-weight-bolder mb-0">
-                      5
+                      2
                     </h5>
             </div>
           </div>
