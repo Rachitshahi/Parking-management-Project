@@ -2,16 +2,17 @@
 <?php
 if(isset($_POST['submit']))
   {
+    $ownerid=$_POST['ownerid'];
     $parkingnumber=mt_rand(100000000, 999999999);
     $catename=$_POST['catename'];
     $vehcomp=$_POST['vehcomp'];
     $vehreno=$_POST['vehreno'];
-    $ownername=$_POST['ownername'];
-    $ownercontno=$_POST['ownercontno'];
-    $enteringtime=$_POST['enteringtime'];
+    //$ownername=$_POST['ownername'];
+    //$ownercontno=$_POST['ownercontno'];
+    //$enteringtime=$_POST['InTime'];
     
      
-    $query=mysqli_query($conn, "insert into  tblvehicle(ParkingNumber,VehicleCategory,VehicleCompanyname,RegistrationNumber,OwnerName,OwnerContactNumber) value('$parkingnumber','$catename','$vehcomp','$vehreno','$ownername','$ownercontno')");
+    $query=mysqli_query($conn, "insert into  tblvehicle(UserId,ParkingNumber,VehicleCategory,VehicleCompanyname,RegistrationNumber) value('$ownerid','$parkingnumber','$catename','$vehcomp','$vehreno')");
     if ($query) {
         echo "<script>alert('Vehicle Entry Detail has been added');</script>";
         echo "<script>window.location.href ='manage-incomingvehicle.php'</script>";
@@ -62,17 +63,17 @@ if(isset($_POST['submit']))
                             </div>
                         </div>
 
-                        <div class="form-group row">
-                            <label class="col-lg-2 col-form-label">Owner Name</label>
+                        <!-- <div class="form-group row">
+                            <label class="col-lg-2 col-form-label">Owner </label>
                             <div class="col-lg-10">
                                 <input type="text" class="form-control" id="ownername" name="ownername" placeholder="Owner Name" required>
                             </div>
-                        </div>
+                        </div> -->
 
                         <div class="form-group row">
-                            <label class="col-lg-2 col-form-label">Owner Contact Number</label>
+                            <label class="col-lg-2 col-form-label">User ID</label>
                             <div class="col-lg-10">
-                                <input type="text" class="form-control" id="ownercontno" name="ownercontno" placeholder="Owner Contact Number" required maxlength="10" pattern="[0-9]+">
+                                <input type="text" class="form-control" id="ownerid" name="ownerid" placeholder="User Id">
                             </div>
                         </div>
                         

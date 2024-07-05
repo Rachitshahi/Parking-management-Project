@@ -11,7 +11,7 @@
                   
               <?php
               $cid=$_GET['viewid'];
-              $ret=mysqli_query($conn,"select * from tblvehicle where ID='$cid'");
+              $ret=mysqli_query($conn,"SELECT * FROM tblvehicle t join users u on t.UserId = u.id where t.ID='$cid'");
               $cnt=1;
 while ($row=mysqli_fetch_array($ret)) {
 
@@ -35,11 +35,11 @@ while ($row=mysqli_fetch_array($ret)) {
                                    </tr>
                                    <tr>
                                     <th>Owner Name</th>
-                                      <td><?php  echo $row['OwnerName'];?></td>
+                                      <td><?php  echo $row['name'];?></td>
                                   </tr>
                                       <tr>  
                                        <th>Owner Contact Number</th>
-                                        <td><?php  echo $row['OwnerContactNumber'];?></td>
+                                        <td><?php  echo $row['phone'];?></td>
                                     </tr>
                                     <tr>
                                <th>In Time</th>

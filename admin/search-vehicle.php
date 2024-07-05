@@ -36,7 +36,7 @@ $sdata=$_POST['searchdata'];
                                         </tr>
                                         </thead>
                <?php
-$ret=mysqli_query($conn,"select *from   tblvehicle where ParkingNumber like '$sdata%'");
+$ret=mysqli_query($conn,"SELECT * FROM tblvehicle t join users u on t.UserId = u.id where t.ParkingNumber like '$sdata%'");
 $num=mysqli_num_rows($ret);
 if($num>0){
 $cnt=1;
@@ -46,7 +46,7 @@ while ($row=mysqli_fetch_array($ret)) {
                 <tr>
                   <td><?php echo $cnt;?></td>
                   <td><?php  echo $row['ParkingNumber'];?></td>
-                  <td><?php  echo $row['OwnerName'];?></td>
+                  <td><?php  echo $row['name'];?></td>
                   <td><?php  echo $row['RegistrationNumber'];?></td> 
                   <td><a href="view-incomingvehicle-detail.php?viewid=<?php echo $row['ID'];?>"class="btn btn-primary">View</a></td>
                 </tr>

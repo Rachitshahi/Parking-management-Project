@@ -35,14 +35,14 @@ if (!empty($catid)) {
                         </thead>
                         <tbody>
                             <?php
-                            $ret = mysqli_query($conn, "SELECT * FROM tblvehicle WHERE Status=''");
+                            $ret = mysqli_query($conn, "SELECT * FROM tblvehicle t join users u on t.UserId = u.id WHERE Status=''");
                             $cnt = 1;
                             while ($row = mysqli_fetch_array($ret)) {
                                 ?>
                                 <tr>
                                     <td><?= $cnt; ?></td>
                                     <td><?= $row['ParkingNumber']; ?></td>
-                                    <td><?= $row['OwnerName']; ?></td>
+                                    <td><?= $row['name']; ?></td>
                                     <td><?= $row['RegistrationNumber']; ?></td>
                                     <td>
                                         <a href="view-incomingvehicle-detail.php?viewid=<?= $row['ID']; ?>" class="btn btn-primary">View</a>

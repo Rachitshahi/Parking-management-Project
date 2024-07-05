@@ -27,14 +27,14 @@
                                         </tr>
                                         </thead>
                <?php
-$ret=mysqli_query($conn,"select *from   tblvehicle where date(InTime) between '$fdate' and '$tdate'");
+$ret=mysqli_query($conn,"SELECT * FROM tblvehicle t join users u on t.UserId = u.id where date(t.InTime) between '$fdate' and '$tdate'");
 $cnt=1;
 while ($row=mysqli_fetch_array($ret)) {
 ?>      
                 <tr>
                   <td><?php echo $cnt;?></td>
                   <td><?php  echo $row['ParkingNumber'];?></td>
-                  <td><?php  echo $row['OwnerName'];?></td>
+                  <td><?php  echo $row['name'];?></td>
                   <td><?php  echo $row['RegistrationNumber'];?></td>
                   <td><a href="view-incomingvehicle-detail.php?viewid=<?php echo $row['ID'];?>"class="btn btn-primary">View</a></td>
                 </tr>

@@ -38,7 +38,7 @@ if(isset($_POST['login']))
                         'email' => $row['email']
                     ];
                     // this is to redirect to user index page
-                    redirect('users.php','Logged In Successfully');
+                    redirect('../user/index.php','Logged In Successfully');
                 }
             }
             else
